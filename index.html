@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <div class="container py-3">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-item"><img src="https://diadelpadre.imprimu.com/1440771294/Handler/CSSOverride/GetImage/1/imprimulogo.png" alt=""></a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <ul>
+                            <li class="is-inline-block-desktop dropdown is-hoverable"><a href="#" class="navbar-item is-active">Sign up</a></li>
+                            <li class="is-inline-block-desktop"><a href="#" class="navbar-item">About us</a></li>
+                            <li class="is-inline-block-desktop dropdown is-hoverable">
+                                <a href="#" class="navbar-item dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu4">Product</a>
+                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <ul>
+                                                <li class="is-hoverable"><a href="#" class="navbar-item is-active">Male</a></li>
+                                                <li class="is-hoverable"><a href="#" class="navbar-item is-active">Female</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li class="is-inline-block-desktop"><a href="#" class="navbar-item">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<section class="hero is_hero is-bold">
+  <div class="hero-body">
+    <div class="container">
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="container">
+    <div class=""><h2 class="title has-text-centered">Popular Products</h2></div>
+    <div class="columns is-desktop is-multiline is-mobile">
+        <div class="column is-one-third-desktop is-half-tablet">
+            <img class="grid-image" src="img/image1.png" alt="">
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+            <img class="grid-image" src="img/image2.png" alt="">
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+            <img class="grid-image" src="img/image3.png" alt="">
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+            <img class="grid-image" src="img/image4.png" alt="">
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+            <img class="grid-image" src="img/image5.png" alt="">
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+            <img class="grid-image" src="img/image6.png" alt="">
+        </div>
+      </div>
+      <div id="modal-1" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img id="modal-image" src="" alt="">
+          </p>
+        </div>
+        <button id="close-modal-1" class="modal-close is-large" aria-label="close"></button>
+      </div>
+</section>
+<div class=""><h2 class="title has-text-centered">How it works</h2></div>
+<section class="container-fluid has-background-light px-6 py-6">
+    
+    <div class="columns is-desktop is-multiline is-mobile">
+        <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">
+            <div class="card-head  has-text-centered">
+                <img class="mw-150" src="img/gift.png" alt="">
+            </div>
+            <div class="card-body has-text-centered">
+                <p>Elige un<br>producto<br>increíble</p>
+            </div>
+        </div>
+        <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">
+            <div class="card-head  has-text-centered">
+                <img class="mw-150" src="img/box.png" alt="">
+            </div>
+            <div class="card-body has-text-centered">
+                <p>Completa<br>la información<br>de envío</p>
+            </div>
+        </div>
+        <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">
+            <div class="card-head has-text-centered">
+                <img class="mw-150" src="img/cart.png" alt="">
+            </div>
+            <div class="card-body has-text-centered">
+                <p>Recibe<br>un link<br>para pago</p>
+            </div>
+        </div>
+        <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">
+            <div class="card-head has-text-centered">
+                <img class="mw-150" src="img/truck.png" alt="">
+            </div>
+            <div class="card-body has-text-centered">
+                <p>Relájate<br>mientras<br>lo enviamos</p>
+            </div>
+        </div>
+    </div>
+</section>
+  </body>
+</html>
+<script>document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+  
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+  
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+    var theModal = document.getElementById("modal-1")
+    var modal = Array.prototype.slice.call(document.querySelectorAll('.grid-image'), 0);
+    var closeButton = document.getElementById("close-modal-1");
+    closeButton.addEventListener('click',function(){
+        theModal.classList.toggle("is-active")
+    })
+    modal.forEach(function(mod){
+        mod.addEventListener('click',function(){
+            
+            theModal.classList.toggle("is-active")
+            let theImage = document.getElementById("modal-image")
+            let source = this.getAttribute("src")
+            theImage.setAttribute('src',source)
+        });
+    });
+  });</script>

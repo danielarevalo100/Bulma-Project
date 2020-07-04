@@ -1,0 +1,33 @@
+:root {
+    --main-font: 'Montserrat', sans-serif;
+  }
+p,h1,h2,h3,h4,a{
+    font-family: var(--main-font);
+}
+.is_hero{
+    max-height: 700px;
+    height: 80vh;
+    background-image: url(https://diadelpadre.imprimu.com/840101560/Handler/CSSOverride/GetImage/1/spanish-background.jpg);
+    background-position: center center;
+    margin-bottom: 100px;
+}
+.title{
+    font-family: var(--main-font);
+    
+}
+h2.title{
+    font-size: 45px;
+    font-weight:800;
+    margin-bottom: 60px;
+}
+.grid-image{
+    width: 100%;
+    height: 100%;
+}
+.mw-150{
+    max-width: 115px;
+}
+
+.card-body p{
+    font-size: 20px;
+}
